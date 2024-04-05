@@ -1,0 +1,136 @@
+.fondo{
+    //position:absolute;
+    background-image: url('../../../assets/img/fondo2.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+    height: 40rem;
+}
+.box {
+    position: absolute;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7rem;
+    background-color: rgba(202, 164, 233, 0.932);
+    background:linear-gradient(rgb(233, 88, 226), rgb(25, 39, 241), rgb(194, 117, 181));
+    border-radius: 5px;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 1;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    // max-width: 50%;
+    // max-height: 50%;
+    padding: 20px 40px;
+    top: 30%;
+    left: 50%; /* Coloca el borde izquierdo del div en el 50% del contenedor */
+    transform: translate(-50%, -50%);
+  }
+
+  .inicio{
+    margin-top: 7rem;
+    width: 90%;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  h1{
+    color: white;
+    font-size: 45px;
+  }
+
+  .saber-mas{
+    width: 100%;
+    height: auto;
+    background-color: rgb(104, 7, 99);
+    //background:linear-gradient(rgb(233, 88, 226), rgb(25, 39, 241), rgb(194, 117, 181));
+  }
+
+  .system-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px; /* Espacio entre las columnas */
+    padding: 2em;
+    text-align: center;
+  }
+
+  .card {
+    flex: 1;
+    padding: 0 10px; /* Espacio entre las columnas */
+    height: auto;
+    background-color: rgba(232, 237, 240, 0.199);
+    border-radius: 5px;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 1;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    margin: 2rem;
+  }
+
+  /* Estilos para dispositivos móviles */
+  @media only screen and (max-width: 600px) {
+    .card {
+      flex: 100%;
+      padding: 0;
+    }
+  }
+
+  p{
+    color: white;
+  }
+
+  .tecnologias{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card-slide{
+    width: 90%;
+    height: 290px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 5px;
+    padding-bottom: 1rem;
+  }
+
+  .card-slide img{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  mat-icon{
+    color: rgb(144, 138, 226);
+    font-size: 56px !important;
+    padding: 2rem;
+}
+
+.text-black{
+  color: black !important;
+  padding: 1rem;
+}
+
+// .card:hover {
+//   transform: scale(1.05);
+//   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+// }
+
+.card-slide:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.preferirnos{
+  width: 100%;
+  background-color: rgb(104, 7, 99);
+}

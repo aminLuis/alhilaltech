@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+// @import '~swiper/swiper-bundle.min.css';
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+@import 'swiper/scss/pagination';
 
 html, body { height: 100%; }
 body { 
@@ -11,6 +15,54 @@ h1,h2,h3,h4,h5{ font-family: monospace !important; color: white; }
 button{ font-family: monospace !important }
 span{ font-family: monospace }
 
+h1{
+    font-size: 45px;
+}
+
 .shadow {
     box-shadow: 2px 2px 5px #999;
 }
+
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2em;
+}
+
+.size-parrafos{
+    font-size: 30px;
+}
+
+.white-parrafos{
+    color: white;
+}
+
+swiper{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 10px !important;
+    padding-top: 5px !important;
+}
+
+.btns-swiper{
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.btn-swiper{
+    background: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 45px !important;
+} 
+
+.text-black-global{
+    color: black;
+}
+  

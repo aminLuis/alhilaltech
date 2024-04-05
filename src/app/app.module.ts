@@ -13,12 +13,25 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { BodyComponent } from './body/body.component';
+import { InicioComponent } from './pages/inicio/inicio.component';
+import { SwiperModule } from 'swiper/angular';
+import { FooterComponent } from './pages/footer/footer.component';
+import { QuienesSomosComponent } from './pages/quienes-somos/quienes-somos.component';
+import { MisionComponent } from './pages/mision/mision.component';
+import { VisionComponent } from './pages/vision/vision.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    BodyComponent,
+    InicioComponent,
+    FooterComponent,
+    QuienesSomosComponent,
+    MisionComponent,
+    VisionComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +43,8 @@ import { MatListModule } from '@angular/material/list';
     MatMenuModule,
     LayoutModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,129 @@
+<div class="fondo">
+    <div class="box shadow">
+        <h1>Soluciones Alhilaltech</h1>
+        <p class="size-parrafos white-parrafos">En Alhilaltech, nos dedicamos a ofrecer soluciones tecnológicas personalizadas para satisfacer las necesidades específicas de tu negocio </p>
+    </div>
+</div>
+
+<app-quienes-somos></app-quienes-somos>
+
+<div class="saber-mas">
+    <div class="system-grid">
+        <div class="card shadow">
+            <h2>Desarrollo de Software a Medida</h2>
+            <p>Creamos aplicaciones personalizadas que se ajustan a tus requisitos
+             únicos. Ya sea que necesites un sistema de gestión empresarial (ERP) 
+             o un software de automatización de procesos, 
+             nuestro equipo de desarrolladores expertos trabaja contigo para entender 
+             tus necesidades y ofrecerte soluciones a medida que impulsen el crecimiento de tu negocio.</p>
+        </div>
+        <div class="card shadow">
+            <h2>Desarrollo de Páginas Web</h2>
+            <p>Diseñamos y desarrollamos páginas web profesionales y atractivas que 
+                reflejen la identidad de tu marca y brinden una experiencia de 
+                usuario excepcional. Ya sea que necesites una página web informativa, 
+                un sitio de comercio electrónico o una plataforma de blogs, nos 
+                aseguramos de que tu presencia en línea sea impactante y efectiva.</p>
+        </div>
+        <div class="card shadow">
+            <h2>Landing Pages para Publicidad</h2>
+            <p>Creamos landing pages optimizadas para conversiones que te 
+                ayuden a maximizar el retorno de tu inversión publicitaria. 
+                Nuestras landing pages están diseñadas estratégicamente para 
+                captar la atención de tu audiencia objetivo y motivarlos a 
+                realizar la acción deseada, ya sea una compra, una 
+                suscripción o una solicitud de información.</p>
+        </div>
+    </div>
+</div>
+
+<div class="tecnologias">
+
+    <h1 class="text-black">Nuestras tecnologías</h1>
+
+    <swiper #swiper 
+        [autoplay]="{delay:5000, disableOnInteraction:true}"
+        [loop]="true"
+        [slidesPerView]="slidesPerView"
+        [spaceBetween]="50"
+        (swiper)="onSwiper($event)"
+        (slideChange)="onSlideChange()"
+        [pagination]="{ clickable: true }"
+        [scrollbar]="{ draggable: true }"
+        >
+        <ng-template swiperSlide>
+            <div class="card-slide shadow">
+                <img src="../../../assets/img/angular.png" alt="">
+                <h4 class="text-black-global">Angular</h4>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div class="card-slide shadow">
+                <img src="../../../assets/img/java.png" alt="">
+                <h4 class="text-black-global">Java</h4>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div class="card-slide shadow">
+                <img src="../../../assets/img/springBoot.png" alt="">
+                <h4 class="text-black-global">Spring boot</h4>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div class="card-slide shadow">
+                <img src="../../../assets/img/typeScript.webp" alt="">
+                <h4 class="text-black-global">Typescript</h4>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div class="card-slide shadow">
+                <img src="../../../assets/img/javaScript.png" alt="">
+                <h4 class="text-black-global">Javascript</h4>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div class="card-slide shadow">
+                <img src="../../../assets/img/vueJs.png" alt="">
+                <h4 class="text-black-global">Vue</h4>
+            </div>
+        </ng-template>
+    </swiper>
+  
+    <div class="btns-swiper">
+        <button class="btn-swiper" (click)="slidePrev()">
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_back_ios"></mat-icon>
+        </button>
+        <button class="btn-swiper" (click)="slideNext()">
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_forward_ios"></mat-icon>
+        </button>
+    </div>
+    
+</div>
+
+<div class="preferirnos">
+   
+    <div class="system-grid">
+        <div class="card shadow">
+            <h2>Experiencia y Expertise</h2>
+            <p>Contamos con un equipo de profesionales altamente calificados y con
+                 amplia experiencia en el desarrollo de software y diseño web.</p>
+        </div>
+        <div class="card shadow">
+            <h2>Enfoque Personalizado</h2>
+            <p>Nos comprometemos a comprender las necesidades específicas de cada 
+                cliente y ofrecer soluciones adaptadas a sus requerimientos.</p>
+        </div>
+        <div class="card shadow">
+            <h2>Calidad y Confianza</h2>
+            <p> Nuestra prioridad es la entrega de productos y servicios de la más 
+                alta calidad, garantizando la satisfacción del cliente en cada proyecto.</p>
+        </div>
+    </div>
+
+</div>
+
+<app-mision></app-mision>
+
+<app-vision></app-vision>
+
+<app-footer></app-footer>
