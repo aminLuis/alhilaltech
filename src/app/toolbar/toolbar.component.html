@@ -8,6 +8,15 @@
         <button (click)="mision()" mat-flat-button><h3>Misión</h3></button>
         <button (click)="vision()" mat-flat-button><h3>Visión</h3></button>
       </div>
+
+      <div class="menu-right-mobil">
+        <button mat-button [matMenuTriggerFor]="menu"><h3>Menú</h3></button>
+        <mat-menu #menu="matMenu">
+          <button (click)="quienesSomos()" mat-menu-item><h4 class="text-black-global">¿Quienes somos?</h4></button>
+          <button (click)="mision()" mat-menu-item><h4 class="text-black-global">Misión</h4></button>
+          <button (click)="vision()" mat-menu-item><h4 class="text-black-global">Visión</h4></button>
+        </mat-menu>
+      </div>
       
     </mat-toolbar>
     <!-- Add Content Here -->

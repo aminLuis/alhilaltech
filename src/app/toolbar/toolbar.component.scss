@@ -73,3 +73,15 @@ button{
     display: none;
   }
 }
+
+.menu-right-mobil{
+  width: 100%;
+  text-align: right;
+  display: none;
+}
+
+@media (max-width: 430px){
+  .menu-right-mobil{
+    display: block;
+  }
+}
