@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, OnChanges, OnInit, SimpleChanges, ViewChild } from '@angular/core';
 import { SwiperComponent } from "swiper/angular";
 import SwiperCore, { Swiper, Virtual, Autoplay } from 'swiper';
 SwiperCore.use([Virtual,Autoplay]);
@@ -9,10 +9,16 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';;
   templateUrl: './inicio.component.html',
   styleUrls: ['./inicio.component.scss']
 })
-export class InicioComponent implements OnInit{
+export class InicioComponent implements OnChanges{
 
   slidesPerView = 3;
   autoplay:boolean = true;
+  @Input() quienesSomos: number = 0;
+  @Input() mision: number = 0;
+  @Input() vision: number = 0;
+
+
+  @ViewChild('targetDiv') targetDiv!: ElementRef;
 
   constructor(private breakpointObserver: BreakpointObserver){
     this.breakpointObserver.observe([
@@ -32,14 +38,23 @@ export class InicioComponent implements OnInit{
     });
   }
 
-  ngOnInit(): void {
-    // this.swiper?.swiperRef.autoplay.start();
-    // this.swiper?.swiperRef.autoplay.running;
+  ngOnChanges(changes: SimpleChanges): void {
+      if(changes['quienesSomos']){
+        if(this.quienesSomos>0){
+          this.goToSection("alhilaltech-somos");
+        }
+      }
+      if(changes['mision']){
+        if(this.mision>0){
+          this.goToSection("alhilaltech-mision");
+        }
+      }
+      if(changes['vision']){
+        if(this.vision>0){
+          this.goToSection("alhilaltech-vision");
+        }
+      }
   }
-
-  ngAfterViewInit() {
-    //this.swiper?.swiperRef.autoplay.running;
- }
 
   onSwiper(swiper:any) {
     console.log(swiper);
@@ -56,5 +71,9 @@ export class InicioComponent implements OnInit{
     this.swiper?.swiperRef.slidePrev(100);
   }
   
+  public goToSection(id:string): void {
+    const element = document.getElementById(id) as HTMLElement;
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
 
 }

@@ -31,17 +31,17 @@
   50% { border-color: transparent; }
 }
 
-h2{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: monospace;
-  white-space: nowrap;
-  border-right: 4px solid;
-  width: 12ch;
-  animation: typing 7s steps(11), blink .5s infinite step-end alternate;
-  overflow: hidden;
-}
+// h2{
+//   display: block;
+//   margin-left: auto;
+//   margin-right: auto;
+//   font-family: monospace;
+//   white-space: nowrap;
+//   border-right: 4px solid;
+//   width: 12ch;
+//   animation: typing 7s steps(11), blink .5s infinite step-end alternate;
+//   overflow: hidden;
+// }
 
 .box {
   width: auto;
@@ -57,4 +57,19 @@ h2{
   max-width: 50%;
   max-height: 50%;
   padding: 20px 40px;
+}
+
+.menu-right{
+  width: 100%;
+  text-align: right;
+}
+
+button{
+  background-color: transparent !important;
+}
+
+@media (max-width: 430px){
+  .menu-right{
+    display: none;
+  }
 }

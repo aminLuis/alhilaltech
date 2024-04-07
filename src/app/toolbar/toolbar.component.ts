@@ -16,6 +16,22 @@ export class ToolbarComponent {
       shareReplay()
     );
 
+    quienesSomosSend: number = 0;
+    visionSend: number = 0;
+    misionSend: number = 0;
+
   constructor(private breakpointObserver: BreakpointObserver) {}
+
+  public quienesSomos(){
+    this.quienesSomosSend = this.quienesSomosSend+1;
+  }
+
+  public vision(){
+    this.visionSend = this.visionSend +1;
+  }
+
+  public mision(){
+    this.misionSend = this.misionSend +1;
+  }
 
 }
